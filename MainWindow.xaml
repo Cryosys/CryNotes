@@ -1,0 +1,46 @@
+﻿<cry:CryWindowDesignable x:Class="CryNotes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryNotes"
+        xmlns:cry="clr-namespace:CryLib.WPF;assembly=CryLib.WPF"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        IsHitTestVisible="true"
+        SnapsToDevicePixels="True"
+        Topmost="False"
+        ShowInTaskbar="False"
+        d:Height="450" d:Width="800">
+
+    <Grid Background="Transparent">
+        <TextBlock Name="textblock" Foreground="White"/>
+        <ItemsControl ItemsSource="{Binding WindowConfigs, RelativeSource={RelativeSource AncestorType=Window, Mode=FindAncestor}}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <local:NoteWindowUserControl Width="350" Height="600" Background="Pink">
+                        <local:NoteWindowUserControl.Margin>
+                            <MultiBinding>
+                                <MultiBinding.Bindings>
+                                    <Binding Path="X" Mode="TwoWay"/>
+                                    <Binding Path="Y" Mode="TwoWay"/>
+                                </MultiBinding.Bindings>
+                                <MultiBinding.Converter>
+                                    <local:PositionToMarginConverter/>
+                                </MultiBinding.Converter>
+                            </MultiBinding>
+                        </local:NoteWindowUserControl.Margin>
+                    </local:NoteWindowUserControl>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</cry:CryWindowDesignable>

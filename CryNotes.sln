@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryNotes", "CryNotes.csproj", "{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Bench_Debug|Any CPU = Bench_Debug|Any CPU
+		Bench_Debug|ARM32 = Bench_Debug|ARM32
+		Bench_Debug|ARM64 = Bench_Debug|ARM64
+		Bench_Debug|x64 = Bench_Debug|x64
+		Bench|Any CPU = Bench|Any CPU
+		Bench|ARM32 = Bench|ARM32
+		Bench|ARM64 = Bench|ARM64
+		Bench|x64 = Bench|x64
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM32 = Debug|ARM32
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|ARM32 = Release|ARM32
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|ARM32.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|ARM32.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|ARM64.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench_Debug|x64.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|Any CPU.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|Any CPU.Build.0 = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|ARM32.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|ARM32.Build.0 = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|ARM64.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|ARM64.Build.0 = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|x64.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Bench|x64.Build.0 = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|ARM32.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|ARM32.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Debug|x64.Build.0 = Debug|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|ARM32.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|ARM32.Build.0 = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|ARM64.Build.0 = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF237BF2-2373-4930-AD62-DCB3CBB20CC1}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9103190-C4A8-454F-9B4C-D7D176CAD6F4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryNotes.exe
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryNotes.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryNotes.deps.json
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryNotes.runtimeconfig.json
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryNotes.pdb
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\Microsoft.Windows.SDK.NET.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\WinRT.Runtime.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryLib.Core.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryLib.MVVM.Windows.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\CryLib.WPF.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\Microsoft.Xaml.Behaviors.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\Newtonsoft.Json.dll
+D:\Progging\CryNotes\bin\Release\net7.0-windows10.0.20348.0\publish\XamlAnimatedGif.dll

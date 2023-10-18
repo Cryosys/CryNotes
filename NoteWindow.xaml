@@ -1,0 +1,56 @@
+﻿<cry:CryWindowDesignable
+        x:Class="CryNotes.NoteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryNotes"
+        xmlns:cry="clr-namespace:CryLib.WPF;assembly=CryLib.WPF"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=local:NoteWindowConfig, IsDesignTimeCreatable=True}"
+        BorderBrush="DimGray"
+        BorderThickness="0.25"
+        ShowInTaskbar="False"
+        Title=""
+        Left="{Binding X, Converter={local:XToWidthConverter}, Mode=TwoWay}"
+        Top="{Binding Y, Converter={local:YToHeightConverter}, Mode=TwoWay}"
+        Width="{Binding Width, Converter={local:XToWidthConverter}, Mode=TwoWay}"
+        Height="{Binding Height, Converter={local:YToHeightConverter}, Mode=TwoWay}"
+        WindowStartupLocation="Manual"
+        MaximizeVisibility="Collapsed"
+        MinimizeVisibility="Collapsed"
+        WindowStyle="{Binding Source={x:Static local:App.ShowInAltTab}, Converter={local:BoolToNoneWindowStyleConverter}, Mode=OneWay}"
+        HeaderColor="#FFFACD7A">
+
+    <cry:CryWindowDesignable.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="Open New" Command="{Binding OpenNewCommand}"/>
+            <MenuItem Header="Delete Note Window" Command="{Binding DeleteNoteWindowCommand}"/>
+            <MenuItem Header="Settings" Command="{Binding SettingsCommand}"/>
+        </ContextMenu>
+    </cry:CryWindowDesignable.ContextMenu>
+
+    <Grid Background="#FFFACD7A">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="43"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding Notes}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:NoteControl/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <cry:CryButton Grid.Row="1" HighlightColor="SlateGray" Margin="3,3,3,10" BorderThickness="0" Command="{Binding AddNoteCommand}"/>
+    </Grid>
+</cry:CryWindowDesignable>
